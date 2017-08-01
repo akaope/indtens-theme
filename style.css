@@ -302,13 +302,13 @@ input.s {
 	padding: 4px 10px;
 	height: 36px;
 	color: #777777;
-	background-color: #FFFFFF;
+	background-color: #fbfbfb;
 	margin: 0;
-	border: 1px solid #BABABA;
+	/* border: 1px solid #BABABA; */
 	border-radius: 0;
 }
 input.s:hover{
-	border: 1px solid #BABABA;
+	/* border: 1px solid #BABABA; */
 }
 input.s:focus {
 	padding-left: 10px;
@@ -346,11 +346,12 @@ button {
 	/*! margin-left: -8px; */
 	margin-bottom: 0;
 	padding: 6px 10px 5px;
-	font-size: 12px;
+	font-size: 13px;
 	height: 36px;
 	text-transform: uppercase;
 	font-family: arial;
 	font-weight: bold;
+	margin-left: -5px;
 }
 .freedom-button:hover,
 input[type="reset"]:hover,
@@ -502,7 +503,8 @@ body {
 	background-color: #ffffff;
 }
 #header-text-nav-container {
-	background-color: #FFFFFF;
+	background-color: #2f2f2f;
+	color: white !important;
 }
 #header-text-nav-wrap {
 /*	padding: 40px 0 25px;*/
@@ -514,6 +516,7 @@ position: relative;
 	float: none;
 	max-width: 25%;
 	height: 60px;
+	color: white;
 }
 #header-logo-image {
 	float: none;
@@ -534,7 +537,7 @@ position: relative;
 	line-height: 20px;
 }
 #site-title a {
-	color: #333333;
+	color: #ffffff;
 	font-size: 29px;
 }
 #site-title a:hover {
@@ -623,7 +626,7 @@ nav li > ol {
 #indtens-navigation {
 	border-bottom: 1px solid #e4e4e4;
 	/* background: linear-gradient(to left, #5da1dc 0%, #1acece 100%); */
-	background-color: #fff;
+	background-color: #ff8115;
 	height: 50px;
 }
 .main-navigation {
@@ -640,7 +643,7 @@ nav li > ol {
 	display: inline-block;
 }
 .main-navigation a {
-	color: #484848;
+	color: #ffffff;
 	display: block;
 	float: none;
 	font-size: 14px;
@@ -2158,7 +2161,7 @@ div#content {
 }
 .home-title {
     margin-bottom: 15px;
-    background-color: #C10E0E;
+    background-color: #e83600;
     color: white;
 }
 
@@ -2238,4 +2241,13 @@ ul.sharebtn-top li>a {
     background-color: rgba(144, 144, 144, 0.35);
     padding-left: 8px;
     padding-right: 8px;
+}
+
+/* recent post with thumbnail */
+.rpwwt-widget ul li { 
+    margin: 0 0 0px !important;
+    border-bottom: 0px !important;
+}
+.rpwwt-widget ul li img { 
+    margin: .3em .75em 0.50em 0 !important;
 }
