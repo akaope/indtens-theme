@@ -489,8 +489,9 @@ body {
 }
 .inner-wrap {
 	margin: 0 auto;
-    max-width: 1115px;
-    /*padding: 20px 50px !important;*/
+	max-width: 1115px;
+	height: 100%;
+	/*padding: 20px 50px !important;*/
 }
 
 /* =HEADER
@@ -634,17 +635,21 @@ nav li > ol {
 	position: relative;
 	font-family: 'Vollkorn', serif;
 	font-weight: 300;
+	height: 50px;
+	line-height: 30px;
 	display: inline-block;
 }
 .main-navigation a {
 	color: #484848;
-    display: block;
-    float: none;
-    font-size: 14px;
-    padding: 12px 8px;
-    font-family: arial;
-    text-transform: uppercase;
-    font-weight: bold;
+	display: block;
+	float: none;
+	font-size: 14px;
+	padding: 12px 8px;
+	font-family: arial;
+	height: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	/* position: relative; */
 }
 .main-navigation li.default-menu,
 li.default-menu {
