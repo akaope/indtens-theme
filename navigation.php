@@ -7,7 +7,7 @@
  * @since Freedom 1.0
  */
 ?>
-<div class="related-item">
+
 <?php
 if( is_archive() || is_home() || is_search() ) {
 	/**
@@ -30,6 +30,7 @@ if( is_archive() || is_home() || is_search() ) {
 }
 
 if ( is_single() ) {	
+	echo "<div class='related-item'>";
 	if( is_attachment() ) {
 	?> 
 	<?php
@@ -82,6 +83,6 @@ if ( is_single() ) {
 		?> 
 	<?php
 	}	
+	echo "</div>";
 }
 ?>
-</div>

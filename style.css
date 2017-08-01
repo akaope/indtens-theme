@@ -527,7 +527,7 @@ position: relative;
 #header-text {
 	float: none; 
 	padding-left: 10px; 
-	width: 25%;
+	/*width: 25%;*/
 }
 #site-title {
 	padding-bottom: 0;
