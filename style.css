@@ -124,11 +124,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 26px;
 }
 h1 { font-size: 42px; line-height: 1.2; }
-h2 {font-size: 25px;line-height: 1.2;font-weight: bold;/* font-family: 'Vollkorn', serif; */}
-h3 {/* font-size: 34px; */line-height: 1.2;}
-h4 { font-size: 30px; line-height: 1.2; }
-h5 { font-size: 26px; line-height: 1.2; }
-h6 { font-size: 22px; line-height: 1.2; }
+h2 {font-size: 30px;line-height: 1.2;font-weight: bold;/* font-family: 'Vollkorn', serif; */}
+h3 { font-size: 25px; line-height: 1.2;}
+h4 { font-size: 20px; line-height: 1.2; }
+h5 { font-size: 18px; line-height: 1.2; }
+h6 { font-size: 16px; line-height: 1.2; }
 hr {
 	border-color: #EAEAEA;
 	border-style: solid none none;
