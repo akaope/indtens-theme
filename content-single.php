@@ -24,7 +24,7 @@
 			<?php the_title(); ?>
 		</h1>
 	</header>
-	<?php if ( function_exists( 'get_author_bio_box' ) ) echo get_author_bio_box(); ?>
+	
 	<?php freedom_entry_meta(); ?>
 
 	<div class="entry-content clearfix">

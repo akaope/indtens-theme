@@ -212,9 +212,9 @@ function freedom_entry_meta() {
 	echo '<div class="entry-meta">';
 ?>
 	<div class="indtens-meta--left">
-	 <!--<span class="byline"><span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo get_the_author(); ?>"><?php echo esc_html( get_the_author() ); ?></a></span></span> -->
 	<?php
-
+   echo '<div class="indtens-autor-pic">' . get_avatar( get_the_author_meta('ID'), 50 ) . '</div>';
+   echo '<div class="meta-info">';
 	$categories_list = get_the_category_list( __( ', ', 'freedom' ) );
 
    $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
@@ -227,7 +227,7 @@ function freedom_entry_meta() {
       esc_attr( get_the_modified_date( 'c' ) ),
       esc_html( get_the_modified_date() )
 	);
-	printf( __( '<span class="posted-on"><a href="%1$s" title="%2$s" rel="bookmark"><b>'.$categories_list.' - </b> %3$s</a></span>', 'freedom' ),
+	printf( __( '<div class="posted-on"><a href="%1$s" title="%2$s" rel="bookmark">Posted on: %3$s</a></div>', 'freedom' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		$time_string
@@ -235,8 +235,11 @@ function freedom_entry_meta() {
 
 	// if ( $tags_list ) echo $tags_list;
 ?>
-	<span class="author-top"><b>oleh </b> </i><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo get_the_author(); ?>"><?php echo ucwords(esc_html( get_the_author() )); ?></a></span>
-	</div>
+	<div class="author-top">
+    by <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo get_the_author(); ?>"><?php echo ucwords(esc_html( get_the_author() )); ?></a>    
+  </div>
+
+	</div></div>
 
 	<div class="indtens-meta--right">
 		<ul class="sharebtn-top">
@@ -578,28 +581,3 @@ function freedom_wrapper_start() {
 function freedom_wrapper_end() {
   echo '</div>';
 }
-
-function getPostViews($postID){
-    $count_key = 'post_views_count';
-    $count = get_post_meta($postID, $count_key, true);
-    if($count==''){
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-        return "0 View";
-    }
-    return $count.' Views';
-}
-function setPostViews($postID) {
-    $count_key = 'post_views_count';
-    $count = get_post_meta($postID, $count_key, true);
-    if($count==''){
-        $count = 0;
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-    }else{
-        $count++;
-        update_post_meta($postID, $count_key, $count);
-    }
-}
-// Remove issues with prefetching adding extra views
-remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);

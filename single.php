@@ -15,7 +15,7 @@ get_header(); ?>
 		<div id="content" class="clearfix">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php setPostViews(get_the_ID());?>
+				
 				<?php get_template_part( 'content', 'single' ); ?>
 
 				<?php get_template_part( 'navigation', 'single' ); ?>

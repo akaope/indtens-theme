@@ -1419,7 +1419,7 @@ a#scroll-up:hover {
 }
 .post .entry-content {
 	margin-bottom: 10px;
-	margin-top: 30px;
+	/* margin-top: 30px; */
 }
 .entry-content ul {
 	list-style: square;
@@ -1445,9 +1445,14 @@ a#scroll-up:hover {
 }
 .entry-meta {
 	color:#aaa;
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
 	font-style: italic;
+	position: relative;
 	font-family: arial;
+	height: auto;
+	width: 100%;
+	overflow: auto;
+	margin-top: 10px;
 }
 .entry-meta .byline i,
 .entry-meta .cat-links i {
@@ -1506,6 +1511,7 @@ a#scroll-up:hover {
 	font-size:12px;
 	line-height:20px;
 	/*! margin-right:25px; */
+	width: 100%;
 }
 .entry-meta .posted-on a,
 .entry-meta .comments-link a,
@@ -2065,8 +2071,9 @@ ul.sharebtn-top li {
 .tag-link a:hover{
 	background: #aaa !important;
 }
-span.author-top {
+div.author-top {
     font-size: 14px;
+    width: 100%;
 }
 .author-top a {
     color: #aaaaaa;
@@ -2250,4 +2257,12 @@ ul.sharebtn-top li>a {
 }
 .rpwwt-widget ul li img {
     margin: .3em .75em 0.50em 0 !important;
+}
+.indtens-autor-pic {
+    width: 50px;
+    /* overflow: hidden; */
+}
+.meta-info {
+    width: 85%;
+    float: right;
 }
