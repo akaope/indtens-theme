@@ -239,7 +239,7 @@ function freedom_entry_meta() {
 	</div>
 
 	<div class="indtens-meta--right">
-		<ul class="sharebtn-top"> 
+		<ul class="sharebtn-top">
 			<li class="twitter--btn"><a target="_blank" class="share-btn" href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" title="Tweet this!"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a></li>
 			<li class="facebook--btn"><a target="_blank" class="share-btn" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&amp;t=<?php the_title(); ?>" title="Share to Facebook"><i class="fa fa-facebook" aria-hidden="true"></i> Share</a></li>
 			<li class="google--btn"><a target="_blank" class="share-btn" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share to Google+"><i class="fa fa-google-plus" aria-hidden="true"></i> Share</a></li>
@@ -261,7 +261,7 @@ function tags_bottom() {
 		$tags_list = get_the_tag_list( '<span class="tag-links">', __( ' ', 'freedom' ), '</span>' );
 		if ( $tags_list ) echo $tags_list;
 	?>
-	<?php 
+	<?php
 	echo '</div>';
 }
 endif;
@@ -579,3 +579,27 @@ function freedom_wrapper_end() {
   echo '</div>';
 }
 
+function getPostViews($postID){
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0 View";
+    }
+    return $count.' Views';
+}
+function setPostViews($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+// Remove issues with prefetching adding extra views
+remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);

@@ -10,12 +10,12 @@
 get_header(); ?>
 
 	<?php do_action( 'freedom_before_body_content' ); ?>
-	
+
 	<div id="primary">
 		<div id="content" class="clearfix">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
+				<?php setPostViews(get_the_ID());?>
 				<?php get_template_part( 'content', 'single' ); ?>
 
 				<?php get_template_part( 'navigation', 'single' ); ?>
