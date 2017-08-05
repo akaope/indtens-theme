@@ -2272,13 +2272,13 @@ ul.sharebtn-top li>a {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	height: 150px;
+	height: 120px;
 }
 .recent-post-thumb img {
-		margin-top: -50px !important;
-		margin-left: -50px !important;
-    width: 100% !important;
-    height: auto !important;
+		/* margin-top: -50px !important; */
+		/* margin-left: -50px !important; */
+		width: 100% !important;
+		height: auto !important;
 		-webkit-transform: scale(1.5);
 		transform: scale(1.5);
 		-webkit-transition: .3s ease-in-out;
