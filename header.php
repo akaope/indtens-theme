@@ -11,6 +11,13 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<!-- Chrome, Firefox OS and Opera -->
+<meta content='#f39c12' name='theme-color'/>
+<!-- Windows Phone -->
+<meta content='#f39c12' name='msapplication-navbutton-color'/>
+<!-- iOS Safari -->
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+<meta content='#f39c12' name='apple-mobile-web-app-status-bar-style'/>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
