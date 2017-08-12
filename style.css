@@ -1427,11 +1427,10 @@ a#scroll-up:hover {
 .entry-content ul,
 .entry-content ol {
 	padding: 0 0 0 35px;
-	/* margin-top: 50px; */
-	margin-bottom: 20px;
-	line-height: 1.5;
-	font-size: 19px;
-	font-family: 'Lora', serif;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 17px;
+    font-family: arial;
 }
 .entry-content li > ul,
 .entry-content li > ol {
