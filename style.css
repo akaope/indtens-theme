@@ -1223,10 +1223,11 @@ li.default-menu {
 ----------------------------------------------- */
 #secondary .widget ul li, #colophon .widget ul li {
 	line-height: 1.2;
-  border-bottom: 1px solid #f2f2f2;
-  padding: 5px 0;
-  font-size: 15px;
-  font-family: arial;
+	border-bottom: 1px solid #f2f2f2;
+	padding: 5px 0;
+	font-size: 15px;
+	font-family: arial;
+	/* margin-bottom: 20px; */
 }
 #colophon .widget ul li {
 	border-bottom: 1px solid #444444;
@@ -1244,12 +1245,15 @@ li.default-menu {
 	width: 60%;
 }
 #secondary .widget-title {
-  color: #4e4e4e;
-  font-size: 17px;
+  color: #8e8e8e;
+  font-size: 18px;
   line-height: 1.2;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
+  font-weight: bold;
   padding-top: 10px;
-	text-transform: uppercase;
+  text-transform: capitalize;
+  text-align: center;
+  border-bottom: 4px solid #d40606;
 }
 #secondary .widget, .error-404 .widget {
 	margin-bottom: 35px;
@@ -1258,7 +1262,8 @@ li.default-menu {
 	margin-right: 10px;
 }
 #secondary a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	color: #d40606;
 }
 .error-404 {
 	padding-bottom: 20px;
@@ -1475,7 +1480,7 @@ a#scroll-up:hover {
 	color:#46c9be
 }
 .entry-meta a:hover {
-	text-decoration: underline;
+	/* text-decoration: underline; */
 }
 .entry-meta .sep {
 	display:block;
@@ -2251,15 +2256,17 @@ ul.sharebtn-top li>a {
 
 /* recent post with thumbnail */
 .rpwwt-widget ul li {
-    margin: 0 0 0px !important;
+    margin: 0 0 30px !important;
     border-bottom: 0px !important;
+    height: 130px !important;
+    position: relative;
+    overflow: visible !important;
 }
 .rpwwt-widget ul li img {
     /*margin: .3em .75em 0.50em 0 !important;*/
 }
 .indtens-autor-pic {
     width: 50px;
-    /* overflow: hidden; */
 }
 .meta-info {
     width: 85%;
@@ -2271,35 +2278,29 @@ ul.sharebtn-top li>a {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	height: 120px;
+	height: 130px;
+	margin-bottom: 30px;
 }
 .recent-post-thumb img {
-		/* margin-top: -50px !important; */
-		/* margin-left: -50px !important; */
-		width: 100% !important;
-		height: auto !important;
-		-webkit-transform: scale(1.5);
-		transform: scale(1.5);
-		-webkit-transition: .3s ease-in-out;
-		transition: .3s ease-in-out;
-}
-.recent-post-thumb:hover img {
-	margin-top: -50px !important;
-	margin-left: 0px !important;
+	width: 100% !important;
+	height: auto !important;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	margin: -20px 0 0 0 !important;
 }
 span.rpwwt-post-title {
     position: absolute;
-    bottom: -50px;
-    left: 0px;
-    width: 314px;
+    bottom: -29px;
+    left: 33px;
     word-wrap: break-word;
-    height: 50px;
+    height: 60px;
     padding: 5px;
-    background-color: rgba(255, 255, 255, 0.63);
-		-webkit-transition: .3s ease-in-out;
-		transition: .3s ease-in-out;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
 }
 .recent-post-thumb img:hover+span {
     bottom: 0px;
