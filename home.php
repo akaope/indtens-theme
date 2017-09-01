@@ -44,9 +44,7 @@ get_header(); ?>
 			<?php endif; ?>
 
 		</div><!-- #content -->
-	</div><!-- #primary -->
-
-	<?php //freedom_sidebar_select(); ?>
+	</div><!-- #primary --> 
 	<?php get_sidebar(); ?>
 	<?php do_action( 'freedom_after_body_content' ); ?>
 

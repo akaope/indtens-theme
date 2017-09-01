@@ -1401,7 +1401,7 @@ a#scroll-up:hover {
 #content .post {
 }
 .single #content .post {
-	padding: 0 10px 10px;
+	padding: 0 10px 10px 0;
 	color: #44445b;
 	max-width: 725px;
 	margin: 0px auto;
@@ -1423,7 +1423,7 @@ a#scroll-up:hover {
 }
 .post .entry-content {
 	margin-bottom: 10px;
-	/* margin-top: 30px; */
+	margin-right: 70px;
 }
 .entry-content ul {
 	list-style: square;
@@ -2091,16 +2091,19 @@ ul.sharebtn li {
     padding-bottom: 3px;
 }
 ul.sharebtn-top {
-    width: 100%;
-    position: relative;
+    position: absolute;
+	right: 0;
+	top: 40px;
 }
 ul.sharebtn-top li {
-    display: inline-block;
-		float: none;
-		text-align: center;
-		font-size: 16px;
-		padding-left: 5px;
-		padding-right: 5px;
+    float: none;
+	text-align: center;
+	font-size: 21px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
 
 }
 .related-title a {
@@ -2179,15 +2182,14 @@ h3.post-title {
 }
 .post-related-body {
     padding-left: 10px;
-		padding-right: 10px;
-		width: 100%;
-		float: right;
+	padding-right: 10px;
+	width: 100%;
+	float: right;
 }
-div#content {
-    margin-left: 10px;
+div#content { 
     margin-right: 10px;
-    background-color: white;
-   /* border: 1px solid #ddd;*/
+    background-color: white; 
+    position: relative;
 }
 #secondary a {
     color: #38383e;
@@ -2197,7 +2199,7 @@ div#content {
 }
 
 .head-post {
-    height: 375px;
+    height: 400px;
     position: relative;
     overflow: hidden;
 }
@@ -2280,7 +2282,7 @@ textarea#comment {
 /* share button */
 ul.sharebtn-top li>a {
     color: white;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .img-caption {
@@ -2377,7 +2379,8 @@ span.rpwwt-post-title {
 header.indtens-title {
     position: absolute;
     bottom: 50px;
-    left: 20px; 
+    left: 20px;
+    width: 70%;
 }
 h1.indtens-title {
     font-family: 'Bree Serif',serif;
