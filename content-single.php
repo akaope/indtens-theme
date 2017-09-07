@@ -15,7 +15,7 @@
 	<!-- <header class="entry-header"><h1 class="entry-title">
 		<?php the_title(); ?>
 	</h1> </header> -->
-	<?php freedom_entry_meta(); ?>
+	<?php //freedom_entry_meta(); ?>
 
 	<div class="entry-content clearfix">
 		<?php

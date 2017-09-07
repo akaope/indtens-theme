@@ -623,9 +623,9 @@ nav li > ol {
 	list-style: none;
 }
 #indtens-navigation {
-	border-bottom: 1px solid #e4e4e4;
+	/* border-bottom: 1px solid #e4e4e4; */
 	/* background: linear-gradient(to left, #5da1dc 0%, #1acece 100%); */
-	background-color: #ff8115;
+	background-color: #212121;
 	height: 50px;
 }
 .main-navigation {
@@ -895,7 +895,7 @@ li.default-menu {
 .sticky {
 }
 #main {
-	padding-top: 30px;
+	/* padding-top: 30px; */
 	padding-bottom: 40px;
 	background-color: #ffffff;
 }
@@ -1076,6 +1076,7 @@ li.default-menu {
 .avatar {
 	border-radius: 50%;
 	float: left;
+	margin-left: 20px;
 }
 .comments-area article header {
 	margin: 0 0 5px;
@@ -1448,14 +1449,14 @@ a#scroll-up:hover {
 }
 .entry-meta {
 	color:#aaa;
-	/* padding-bottom: 20px; */
 	font-style: italic;
 	position: relative;
 	font-family: arial;
 	height: auto;
 	width: 100%;
-	overflow: auto;
 	margin-top: 10px;
+	position: absolute;
+	bottom: 0;
 }
 .entry-meta .byline i,
 .entry-meta .cat-links i {
@@ -2097,14 +2098,13 @@ ul.sharebtn-top {
 }
 ul.sharebtn-top li {
     float: none;
-	text-align: center;
-	font-size: 21px;
-	padding-left: 5px;
-	padding-right: 5px;
-	width: 55px;
-	height: 55px;
-	line-height: 55px;
-
+    text-align: center;
+    font-size: 21px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
 }
 .related-title a {
     color: #5d6a7d;
@@ -2199,14 +2199,16 @@ div#content {
 }
 
 .head-post {
-    height: 400px;
+    height: 430px;
     position: relative;
     overflow: hidden;
+    background-image: black !important;
 }
-.head-post img {
+img.head-post__img {
     position: absolute;
     width: auto;
     margin-top: -60px;
+    /* background-color: aliceblue; */
 }
 .home-title h3 {
     font-size: 19px;
@@ -2226,6 +2228,8 @@ div#content {
 .indtens-meta--left {
     width: 65%;
     float: left;
+    /* position: absolute; */
+    /* bottom: 0; */
 }
 .indtens-meta--right {
     width: 35%;
@@ -2312,10 +2316,11 @@ ul.sharebtn-top li>a {
     /*margin: .3em .75em 0.50em 0 !important;*/
 }
 .indtens-autor-pic {
-    width: 50px;
+    width: 40px;
+    position: relative !important;
 }
 .meta-info {
-    width: 85%;
+    width: 90%;
     float: right;
 }
 
@@ -2386,4 +2391,19 @@ h1.indtens-title {
     font-family: 'Bree Serif',serif;
     color: white;
     font-size: 35px; 
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 140, 186, 0.49);
+  background: -webkit-linear-gradient(rgba(255, 0, 0, 0), black); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255, 0, 0, 0), black); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255, 0, 0, 0), black); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255, 0, 0, 0), black); /* Standard syntax */
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
 }
