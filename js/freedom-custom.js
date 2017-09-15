@@ -33,16 +33,14 @@ jQuery(document).ready(function() {
 
 
 jQuery(document).ready(function() {
-
-  jQuery(window).scroll(function () {
-    //   console.log(jQuery(window).scrollTop())
+  jQuery(window).scroll(function () { 
     if (jQuery(window).scrollTop() > 60) {
       jQuery('#indtens-navigation').addClass('navbar-fixed');
-      jQuery('#main').css('margin-top','50px');
+      // jQuery('#main').css('margin-top','50px');
     }
     if (jQuery(window).scrollTop() < 60) {
       jQuery('#indtens-navigation').removeClass('navbar-fixed');
-      jQuery('#main').css('margin-top','0px');
+      // jQuery('#main').css('margin-top','0px');
     }
   });
 });

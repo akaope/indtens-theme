@@ -130,7 +130,7 @@ wp_head();
 						if ( $categories_list ) {
 							echo "<div class='categories_list'>".$categories_list."</div>";
 						}									
-						freedom_entry_meta();
+						// freedom_entry_meta();
 						echo "<div class='img-caption'>".get_post(get_post_thumbnail_id())->post_excerpt."</div>";
 						echo "</div>";
 					}					

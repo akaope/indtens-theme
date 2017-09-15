@@ -278,7 +278,7 @@ input[type="email"],
 input[type="password"],
 textarea {
 	padding: 1%;
-	border: 1px solid #EAEAEA;
+	border: 1px solid #eaeaea;
 	line-height: 20px;
 	width: 95%;
 	margin: 0 0 30px;
@@ -299,9 +299,9 @@ input.s {
 	font-family: arial;
 	width: 50%;
 	padding: 4px 10px;
-	height: 36px;
-	color: #777777;
-	background-color: #fbfbfb;
+	height: 30px;
+	color: #424242;
+	background-color: #eaeaea;
 	margin: 0;
 	/* border: 1px solid #BABABA; */
 	border-radius: 0;
@@ -326,18 +326,18 @@ input[type="submit"],
 button {
    margin-bottom: 30px;
    padding: 10px 20px;
-	background-color: #46c9be;
-	border: 0px;
-	transition: background-color 0.3s linear 0s;
+   background-color: #801111;
+   border: 0px;
+   transition: background-color 0.3s linear 0s;
    -webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius:3px;
+   -moz-border-radius: 3px;
+   border-radius:3px;
    font-size: 18px;
    -moz-appearance: none !important;
-	-webkit-appearance: none !important;
-	appearance: none !important;
-	cursor: pointer;
-	display:inline-block;
+   -webkit-appearance: none !important;
+   appearance: none !important;
+   cursor: pointer;
+   display:inline-block;
    color: #FFFFFF;
 }
 #search-form input[type="submit"] {
@@ -346,7 +346,7 @@ button {
 	margin-bottom: 0;
 	padding: 6px 10px 5px;
 	font-size: 13px;
-	height: 36px;
+	height: 30px;
 	text-transform: uppercase;
 	font-family: arial;
 	font-weight: bold;
@@ -502,7 +502,7 @@ body {
 	background-color: #ffffff;
 }
 #header-text-nav-container {
-	background-color: #2f2f2f;
+	background-color: #bb1919;
 	color: white !important;
 }
 #header-text-nav-wrap {
@@ -550,13 +550,14 @@ position: relative;
 	font-family: 'Vollkorn', serif;
 }
 #header-right-section {
-	float: right;
+	/* float: right; */
 	width: 70%;
 	margin: 0;
 	padding: 0;
 	position: absolute;
 	top: 13px;
-	left: 25%;
+	/* left: 25%; */
+	right: 0;
 }
 #header-right-sidebar {
 	overflow: hidden;
@@ -596,7 +597,7 @@ position: relative;
 /* =SEARCH WIDGET
 ----------------------------------------------- */
 #masthead input.s {
-	width: 400px;
+	width: 260px;
 }
 #search-form span {
 	background-color: #46c9be;
@@ -626,7 +627,7 @@ nav li > ol {
 	/* border-bottom: 1px solid #e4e4e4; */
 	/* background: linear-gradient(to left, #5da1dc 0%, #1acece 100%); */
 	background-color: #212121;
-	height: 50px;
+	height: 38px;
 }
 .main-navigation {
 	width: 100%;
@@ -637,8 +638,8 @@ nav li > ol {
 	position: relative;
 	font-family: 'Vollkorn', serif;
 	font-weight: 300;
-	height: 50px;
-	line-height: 30px;
+	height: 38px;
+	line-height: 17px;
 	display: inline-block;
 }
 .main-navigation a {
@@ -648,9 +649,9 @@ nav li > ol {
 	font-size: 14px;
 	padding: 12px 8px;
 	font-family: arial;
-	height: 50px;
+	height: 38px;
 	text-transform: uppercase;
-	font-weight: bold;
+	/* font-weight: bold; */
 	/* position: relative; */
 }
 .main-navigation li.default-menu,
@@ -1227,7 +1228,7 @@ li.default-menu {
 	padding: 5px 0;
 	font-size: 15px;
 	font-family: arial;
-	/* margin-bottom: 20px; */
+	margin-top: 20px;
 }
 #colophon .widget ul li {
 	border-bottom: 1px solid #444444;
@@ -1258,7 +1259,7 @@ li.default-menu {
 #secondary .widget, .error-404 .widget {
 	margin-bottom: 35px;
 	font-size: 20px;
-	margin-left: 10px;
+	/* margin-left: 10px; */
 	margin-right: 10px;
 }
 #secondary a:hover {
@@ -1404,7 +1405,7 @@ a#scroll-up:hover {
 .single #content .post {
 	padding: 0 10px 10px 0;
 	color: #44445b;
-	max-width: 725px;
+	max-width: 720px;
 	margin: 0px auto;
 }
 .type-post .entry-title,
@@ -1424,7 +1425,7 @@ a#scroll-up:hover {
 }
 .post .entry-content {
 	margin-bottom: 10px;
-	margin-right: 70px;
+	/* margin-right: 70px; */
 }
 .entry-content ul {
 	list-style: square;
@@ -1455,8 +1456,9 @@ a#scroll-up:hover {
 	height: auto;
 	width: 100%;
 	margin-top: 10px;
-	position: absolute;
-	bottom: 0;
+	overflow: hidden;
+	/* bottom: 0; */
+	/* position: absolute; */
 }
 .entry-meta .byline i,
 .entry-meta .cat-links i {
@@ -2186,9 +2188,9 @@ h3.post-title {
 	width: 100%;
 	float: right;
 }
-div#content { 
-    margin-right: 10px;
-    background-color: white; 
+div#content {
+    /* margin-right: 10px; */
+    background-color: white;
     position: relative;
 }
 #secondary a {
@@ -2202,7 +2204,8 @@ div#content {
     height: 430px;
     position: relative;
     overflow: hidden;
-    background-image: black !important;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 img.head-post__img {
     position: absolute;
@@ -2290,7 +2293,7 @@ ul.sharebtn-top li>a {
 }
 
 .img-caption {
-    z-index: 999;
+    /* z-index: 999; */
     color: white;
     position: absolute;
     font-size: 10px;
@@ -2306,7 +2309,7 @@ ul.sharebtn-top li>a {
 
 /* recent post with thumbnail */
 .rpwwt-widget ul li {
-    margin: 0 0 30px !important;
+    margin: 0 0 40px !important;
     border-bottom: 0px !important;
     height: 130px !important;
     position: relative;
@@ -2320,7 +2323,7 @@ ul.sharebtn-top li>a {
     position: relative !important;
 }
 .meta-info {
-    width: 90%;
+    width: 84%;
     float: right;
 }
 
@@ -2329,7 +2332,7 @@ ul.sharebtn-top li>a {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	height: 130px;
+	height: 145px;
 	margin-bottom: 30px;
 }
 .recent-post-thumb img {
@@ -2343,13 +2346,13 @@ ul.sharebtn-top li>a {
 }
 span.rpwwt-post-title {
     position: absolute;
-    bottom: -29px;
+    bottom: -40px;
     left: 33px;
     word-wrap: break-word;
     height: auto;
     padding: 8px;
     background-color: white;
-    text-align: center; 
+    text-align: center;
     width: 80%;
     line-height: normal;
     border-bottom: 2px solid;
@@ -2406,4 +2409,25 @@ h1.indtens-title {
   width: 100%;
   height: 100%;
   transition: .5s ease;
+}
+form#search-form {
+    float: right;
+}
+aside#recent-posts-widget-with-thumbnails-2 { 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.sharebtn-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,.1);
+}
+div#breadcrumbs {
+    margin-left: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    border-bottom: 1px solid #c5c5c5;
 }
