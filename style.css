@@ -2136,8 +2136,8 @@ div.author-top {
     background: #fff;
     margin-bottom: 40px;
     -moz-box-shadow: 1px 1px 2px 0 rgba(0,0,0,.1);
-		height: 210px;
-		position: relative;
+    height: 250px;
+    position: relative;
 }
 .post-related {
     background: #fff;
@@ -2147,19 +2147,20 @@ div.author-top {
 		position: relative;
 }
 .post-thumb {
-    max-height: 110px;
+    max-height: 200px;
     overflow: hidden;
+    border-radius: 5px;
 }
 h3.post-title {
-    font-size: 15px;
-    padding-top: 5px;
+    font-size: 18px;
+    padding-top: 0px;
 }
 .post-title a {
     color: #3f3f3f;
 }
 .post-body {
-    padding-left: 10px;
-		padding-right: 10px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
 }
 .post-author {
     position: absolute;
@@ -2223,8 +2224,11 @@ img.head-post__img {
 }
 .home-title {
     margin-bottom: 15px;
-    background-color: #e83600;
+    margin-left: 15px;
+    background-color: #bb1919;
     color: white;
+    margin-right: 15px;
+    border-radius: 5px;
 }
 
 /* meta description */
@@ -2430,4 +2434,18 @@ div#breadcrumbs {
     font-size: 14px;
     margin-top: 10px;
     border-bottom: 1px solid #c5c5c5;
+}
+.home-primary {
+    margin-top: 20px;
+}
+.ctgr_home > ul.post-categories > li {
+    display: inline-block;
+    padding: 0 5px 0 0 !important;
+    background-color: rgba(249, 249, 249, 0.55); 
+}
+.ctgr_home > ul.post-categories > li a {
+    color: #b1b1b1;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
 }

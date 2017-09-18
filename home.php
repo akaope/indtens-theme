@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<?php do_action( 'freedom_before_body_content' ); ?>
 
-	<div id="primary">
+	<div id="primary" class="home-primary">
 		<div id="content" class="indtens-ctn--home clearfix">
 			<div class="home-title">
 				<h3>Masih Hangat</h3>

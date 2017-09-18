@@ -21,23 +21,26 @@ else
 $article_class .= ' post-box';
 ?>
 
-  <div class="col-md-4">
-    <div class="post-item">
-			<div class="post-thumb">
-				<a href="<?php the_permalink()?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-					<?php the_post_thumbnail(); ?>
-				</a>
-			</div>
-      <div class="post-body">
-				<div class="title">
-					<h3 class="post-title"><a href="<?php the_permalink()?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-				</div>
-				<div class="post-author">
-					<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo get_the_author(); ?>"><?php echo ucwords(esc_html(get_the_author())); ?></a>
-				</div>
-      </div>
-    </div>
-  </div>
+<div class="col-md-6">
+	<div class="post-item">
+		<div class="post-thumb">
+			<a href="<?php the_permalink()?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+			<?php the_post_thumbnail(); ?>
+			</a>
+		</div>
+		<div class="post-body">
+			<div class="title">
+				<?php 
+					$categories_list = get_the_category_list();
+					if ( $categories_list ) {
+						echo "<div class='ctgr_home'>".$categories_list."</div>";
+					}	
+				?>
+			<h3 class="post-title"><a href="<?php the_permalink()?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+			</div> 
+		</div>
+	</div>
+</div>
 
 
 <?php 
