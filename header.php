@@ -116,25 +116,5 @@ wp_head();
 	<?php do_action( 'freedom_before_main' ); ?>
 	<div id="main" class="clearfix">
 		<div class="inner-wrap clearfix">
-		
-			<?php
-				if ( is_front_page() == false ) {					
-	   				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.					
-	   					echo '<div class="head-post">';
-						the_post_thumbnail( 'full', array('class'=>'head-post__img') );
-						echo "<div class='overlay'></div>";
-						echo '<header class="indtens-title"><h1 class="indtens-title">';
-							the_title();
-						echo '</h1> </header>';
-						$categories_list = get_the_category_list();
-						if ( $categories_list ) {
-							echo "<div class='categories_list'>".$categories_list."</div>";
-						}									
-						// freedom_entry_meta();
-						echo "<div class='img-caption'>".get_post(get_post_thumbnail_id())->post_excerpt."</div>";
-						echo "</div>";
-					}					
-				}
-				
-			?>
+	
 		

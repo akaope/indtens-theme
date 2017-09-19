@@ -1077,7 +1077,7 @@ li.default-menu {
 .avatar {
 	border-radius: 50%;
 	float: left;
-	margin-left: 20px;
+	margin-left: 5px;
 }
 .comments-area article header {
 	margin: 0 0 5px;
@@ -1403,9 +1403,9 @@ a#scroll-up:hover {
 #content .post {
 }
 .single #content .post {
-	padding: 0 10px 10px 0;
+	padding: 0 !important;
 	color: #44445b;
-	max-width: 720px;
+	max-width: 750px;
 	margin: 0px auto;
 }
 .type-post .entry-title,
@@ -1446,7 +1446,7 @@ a#scroll-up:hover {
 	line-height: 1.3;
 }
 .post .entry-content a:hover {
-	text-decoration: underline;
+	/* text-decoration: underline; */
 }
 .entry-meta {
 	color:#aaa;
@@ -1523,8 +1523,8 @@ a#scroll-up:hover {
 .entry-meta .comments-link a,
 .entry-meta .edit-link a,
 .entry-meta .tag-links a {
-	color:#aaa;
-	font-size: 14px;
+	color: #505050;
+	font-size: 13px;
 }
 .entry-meta .posted-on a:hover,
 .entry-meta .comments-link a:hover,
@@ -2114,8 +2114,8 @@ ul.sharebtn-top li {
 }
 .tag-links a {
     background: #f1f1f1;
-    padding: 6px 10px;
-    color: #888888 !important;
+    padding: 4px 7px;
+    color: #4c4c4c !important;
     border-radius: 4px;
     margin-right: 4px;
     font-family: sans-serif;
@@ -2198,15 +2198,15 @@ div#content {
     color: #38383e;
 }
 .author-top a {
-    color: #aaaaaa;
+    color: #585858;
 }
 
 .head-post {
-    height: 430px;
+    height: 350px;
     position: relative;
     overflow: hidden;
-    margin-right: 10px;
-    margin-left: 10px;
+    /* margin-right: 10px; */
+    /* margin-left: 10px; */
 }
 img.head-post__img {
     position: absolute;
@@ -2233,15 +2233,15 @@ img.head-post__img {
 
 /* meta description */
 .indtens-meta--left {
-    width: 65%;
+    width: 23%;
     float: left;
     /* position: absolute; */
     /* bottom: 0; */
 }
 .indtens-meta--right {
-    width: 35%;
-		float: right;
-		text-align: right;
+    width: 70%;
+    float: right;
+    text-align: right;
 }
 /* comment */
 .comment-meta img.avatar {
@@ -2327,7 +2327,7 @@ ul.sharebtn-top li>a {
     position: relative !important;
 }
 .meta-info {
-    width: 84%;
+    width: 66%;
     float: right;
 }
 
@@ -2377,27 +2377,30 @@ span.rpwwt-post-title {
     position: absolute;
     font-size: 12px;
     font-family: arial;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 170px;
 }
 .post-categories li {
     display: inline-block; 
     padding: 3px 5px;
     background-color: rgba(148, 148, 148, 0.55); 
 }
+.post-categories li:hover { 
+    background-color: rgba(199, 57, 57, 0.55); 
+}
 .post-categories li a {
     color: white;
 }
 header.indtens-title {
     position: absolute;
-    bottom: 50px;
+    bottom: 11px;
     left: 20px;
     width: 70%;
 }
 h1.indtens-title {
     font-family: 'Bree Serif',serif;
     color: white;
-    font-size: 35px; 
+    font-size: 34px;
 }
 .overlay {
   position: absolute;
@@ -2448,4 +2451,167 @@ div#breadcrumbs {
     font-size: 12px;
     font-family: arial;
     font-weight: bold;
+}
+/*************************
+
+Styles for the buttons.
+@Vivek Kumar Poddar
+http://wpvkp.com
+
+*************************/
+
+.social-box {
+    display: block;
+    margin: 0px 0 20px;
+    /* padding: 0 6rem 0; */
+}
+
+.social-box:last-of-type {
+    /*margin: 0 0 40px;*/
+}
+
+.social-btn {
+    display: block;
+    width: 100%;
+}
+
+a.col-2.sbtn span {
+    display: none;
+}
+
+a.col-1.sbtn {
+    width: 180px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+    padding: 10px;
+    color: #fff;
+    margin: 0 0.5% 0 0;
+    font-size: 15px;
+}
+
+a.col-1.sbtn span {
+    margin: 0 0 0 15px;
+}
+
+a.col-2.sbtn {
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+    /* padding: 10px; */
+    color: #fff;
+    margin: 0 0.5% 0 0;
+    line-height: 42px !important;
+    width: 42px;
+    height: 42px;
+}
+.s-twitter {
+	background: #03A9F4;
+}
+.s-twitter::before {
+    font-family: fontawesome;
+    content: '\f099';
+}
+.s-twitter:hover {
+    background: #0093d6;
+}
+.s-facebook {
+	background: #3F51B5;
+}
+.s-facebook::before {
+    font-family: fontawesome;
+    content: '\f09a';
+}
+a.col-1.sbtn.s-facebook:hover {
+    background: #2f409f;
+}
+.s-googleplus {
+	background: #F44336;
+}
+.s-googleplus::before {
+    font-family: fontawesome;
+    content: '\f0d5';
+}
+.s-googleplus:hover {
+    background: #c82c21;
+}
+.s-whatsapp {
+	background: #4CAF50;
+}
+.s-whatsapp::before {
+    font-family: fontawesome;
+    content: '\f232';
+}
+a.col-2.sbtn.s-whatsapp:hover {
+    background: #3d9440;
+}
+.s-linkedin {
+	background: #1a7baa;
+}
+.s-linkedin::before {
+    font-family: fontawesome;
+    content: '\f0e1';
+}
+a.col-2.sbtn.s-linkedin:hover {
+    background: #136288;
+}
+.s-pinterest {
+	background: #bd081c;
+}
+.s-pinterest::before {
+    font-family: fontawesome;
+    content: '\f231';
+}
+a.col-2.sbtn.s-pinterest:hover {
+    background: #a10718;
+}
+.social-btn a:last-of-type {
+    margin: 0;
+}
+@media only screen and (max-width: 1200px) {
+    a.col-1.sbtn {
+        width: 180px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 2px;
+        padding: 10px;
+        color: #fff;
+        margin: 0 0.5% 0 0;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    a.col-1.sbtn {
+        width: 46px;
+    }
+    a.col-1.sbtn span {
+        display: none;
+    }
+    .meta-info {
+	    width: 100%;
+	    float: right;
+	}
+}
+
+#breadcrumbs{
+    list-style:none;
+    /*margin: 0px 10px;*/
+    overflow:hidden;
+}
+  
+#breadcrumbs li{
+    display:inline-block;
+    vertical-align:middle;
+    margin-right: 5px;
+    font-size: 12px;
+    font-family: 'Open Sans',arial,sans-serif;
+}
+  
+#breadcrumbs .separator{
+    font-size: 17px;
+    font-weight:100;
+    color:#ccc;
+}
+ul.breadcrumbs > li > a {
+    color: #44445b;
 }
