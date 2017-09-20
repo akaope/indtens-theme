@@ -225,7 +225,7 @@ function freedom_entry_meta() {
 	// if ( $tags_list ) echo $tags_list;
 ?>
 	<div class="author-top">
-		<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo get_the_author(); ?>"><?php echo ucwords(esc_html( get_the_author() )); ?></a>    
+		<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo get_the_author(); ?>"><?php echo ucwords(esc_html( get_the_author() )); ?> - <?php if(function_exists('the_views')) { the_views(); } ?></a>    
 	</div>
 
 	</div></div>

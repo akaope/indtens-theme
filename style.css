@@ -2313,9 +2313,9 @@ ul.sharebtn-top li>a {
 
 /* recent post with thumbnail */
 .rpwwt-widget ul li {
-    margin: 0 0 40px !important;
+    margin: 0 0 10px !important;
     border-bottom: 0px !important;
-    height: 130px !important;
+    /* height: 130px !important; */
     position: relative;
     overflow: visible !important;
 }
@@ -2337,7 +2337,7 @@ ul.sharebtn-top li>a {
 	overflow: hidden;
 	position: relative;
 	height: 145px;
-	margin-bottom: 30px;
+	margin-bottom: 6px;
 }
 .recent-post-thumb img {
 	width: 100% !important;
@@ -2349,17 +2349,17 @@ ul.sharebtn-top li>a {
 	margin: -20px 0 0 0 !important;
 }
 span.rpwwt-post-title {
-    position: absolute;
+    /* position: absolute; */
     bottom: -40px;
     left: 33px;
     word-wrap: break-word;
     height: auto;
-    padding: 8px;
-    background-color: white;
+    /* padding: 8px; */
+    /* background-color: white; */
     text-align: center;
     width: 80%;
     line-height: normal;
-    border-bottom: 2px solid;
+    /* border-bottom: 2px solid; */
     font-size: 14px;
     font-family: 'Noto Sans',sans-serif;
 }
@@ -2614,4 +2614,32 @@ a.col-2.sbtn.s-pinterest:hover {
 }
 ul.breadcrumbs > li > a {
     color: #44445b;
+}
+.recent-post-thumb.min-thumb {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 0 !important;
+    float: left;
+}
+span.rpwwt-post-title.min-thumb {
+    position: static;
+    bottom: 0 !important;
+    float: right;
+    width: 61%;
+    border-bottom: 0;
+    text-align: left;
+}
+.min-thumb a {
+    text-align: left !important;
+    font-size: 16px;
+    word-wrap: break-word;
+    font-weight: 100 !important;
+}
+ul > li.min-thumb {
+    margin-bottom: 10px !important;
+    margin-top: 15px !important;
+}
+span.rpwwt-post-title a {
+    font-size: 16px;
+    font-weight: bold;
 }
