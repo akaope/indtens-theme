@@ -33,7 +33,9 @@
 	?> 
 
 	<?php freedom_entry_meta(); ?>
-	<?php echo get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true); ?>
+	<div class="meta_desc">
+		<?php echo get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true); ?>
+	</div>
 	<div class="entry-content clearfix">
 		<?php
 			the_content();

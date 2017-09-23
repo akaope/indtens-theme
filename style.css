@@ -2233,13 +2233,11 @@ img.head-post__img {
 
 /* meta description */
 .indtens-meta--left {
-    width: 23%;
+    width: 32%;
     float: left;
-    /* position: absolute; */
-    /* bottom: 0; */
 }
 .indtens-meta--right {
-    width: 70%;
+    width: 60%;
     float: right;
     text-align: right;
 }
@@ -2327,8 +2325,8 @@ ul.sharebtn-top li>a {
     position: relative !important;
 }
 .meta-info {
-    width: 66%;
-    float: right;
+    width: 76%;
+    float: right
 }
 
 /* thumbnail recent post */
@@ -2631,13 +2629,13 @@ span.rpwwt-post-title.min-thumb {
 }
 .min-thumb a {
     text-align: left !important;
-    font-size: 16px;
+    font-size: 14px !important;
     word-wrap: break-word;
     font-weight: 100 !important;
 }
 ul > li.min-thumb {
-    margin-bottom: 10px !important;
-    margin-top: 15px !important;
+    margin-bottom: -20px !important; 
+    overflow: auto !important;
 }
 span.rpwwt-post-title a {
     font-size: 16px;
