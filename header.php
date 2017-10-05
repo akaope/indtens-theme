@@ -22,9 +22,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<link href="https://fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link href="//fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 <?php
 /**
  * This hook is important for wordpress plugins and other many things
